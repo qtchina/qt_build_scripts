@@ -1,5 +1,11 @@
 #!/bin/sh
 
+# for ubuntu14.04 x86_64
+# add clang-5.0 apt source list, http://apt.llvm.org/
+# apt-get install clang-5.0 xz-utils make libssl-dev libgles2-mesa-dev libglu1-mesa-dev libglew-dev  freeglut3-dev
+
+cd /usr/bin/ && ln -sv clang++-5.0 clang++
+cd /usr/bin/ && ln -sv clang-5.0 clang
 export CC=clang-5.0
 export CXX=clang++-5.0
 
@@ -31,7 +37,6 @@ export CXX=clang++-5.0
       -skip qtdoc \
       -skip qtgamepad \
       -skip qtlocation \
-      -skip qtmultimedia \
       -skip qtnetworkauth \
       -skip qtpurchasing \
       -skip qtquickcontrols \
@@ -42,7 +47,6 @@ export CXX=clang++-5.0
       -skip qtserialbus \
       -skip qtserialport \
       -skip qtspeech \
-      -skip qtsvg \
       -skip qttools \
       -skip qtvirtualkeyboard \
       -skip qtwayland \
