@@ -4,6 +4,8 @@
 # add clang-5.0 apt source list, http://apt.llvm.org/
 # apt-get install clang-5.0 xz-utils make libssl-dev libgles2-mesa-dev libglu1-mesa-dev libglew-dev  freeglut3-dev
 
+# qt512 need clang 6.0
+# qt510 need clang 5.0
 cd /usr/bin/ && ln -sv clang++-5.0 clang++
 cd /usr/bin/ && ln -sv clang-5.0 clang
 export CC=clang-5.0
